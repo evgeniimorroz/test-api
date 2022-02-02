@@ -1,26 +1,28 @@
 import React from 'react';
-import s from './Header.style.scss';
+import s from './Header.module.scss';
+import classNames from 'classnames';
 
 const Header = () => {
   return (
     <div className={s.header}>
-      <nav>
-        <div className='nav-wrapper  teal darken-1'>
-          <a href='#!' className='brand-logo'>
-            Logo
-          </a>
-          <ul id='nav-mobile' className='right hide-on-med-and-down'>
-            <li>
-              <a href='#!'>Sass</a>
-            </li>
-            <li>
-              <a href='#!'>Components</a>
-            </li>
-            <li>
-              <a href='#!'>JavaScript</a>
-            </li>
-          </ul>
-        </div>
+      <nav className={classNames(s.nav, 'container')}>
+        <ul className={s.nav__list}>
+          <li className={s.nav__item}>
+            <a href='#!' className={s.nav__link}>
+              Все продукты
+            </a>
+          </li>
+          <li className={s.nav__item}>
+            <a href='#!' className={s.nav__link}>
+              Ягоды
+            </a>
+          </li>
+          <li className={s.nav__item}>
+            <a href='#!' className={s.nav__link}>
+              Суперфуд
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   );

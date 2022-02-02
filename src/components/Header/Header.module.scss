@@ -1,0 +1,30 @@
+.header {
+  font-size: 2.3rem;
+  width: 100%;
+  background: #8cc63f;
+  box-shadow: 0px 4px 20px rgba(184, 180, 176, 0.8);
+  border-radius: 4px;
+
+  .nav {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &__link {
+      text-transform: uppercase;
+      border-bottom: 2.5px solid transparent;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        color: #2f4f3c;
+        border-bottom: 2px solid #2f4f3c;
+      }
+    }
+  }
+}

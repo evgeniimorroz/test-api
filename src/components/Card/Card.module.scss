@@ -1,0 +1,122 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 10px;
+  width: 266px;
+  height: 410px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 16px rgba(184, 180, 176, 0.5);
+  transition: 0.3s ease-in-out;
+
+  &__title {
+    font-family: Orelega One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.65rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+
+    color: #2f4f3c;
+  }
+
+  &__img {
+    width: 208px;
+    height: 141px;
+    margin: 40px auto 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__price {
+    span:first-child {
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      text-align: center;
+      letter-spacing: 0.02rem;
+      color: #006837;
+      margin-right: 25px;
+    }
+    span {
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.02rem;
+      color: #000000;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .counter {
+      width: 114px;
+      height: 49px;
+      border: 1px solid #343434;
+      border-radius: 16px;
+      margin-right: 20px;
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.02rem;
+
+      color: #343434;
+
+      .incr {
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .decr {
+        cursor: pointer;
+        width: 20px;
+      }
+    }
+
+    .btn_add {
+      width: 114px;
+      height: 49px;
+      border: 1px solid #343434;
+      border-radius: 16px;
+      background: #2f4f3c;
+      color: #ffffff;
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.02rem;
+
+      &:hover {
+        background: #ffffff;
+        color: #2f4f3c;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
